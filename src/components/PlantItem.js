@@ -1,9 +1,18 @@
-import { plantList } from '../datas/plantList'
-import '../styles/ShoppingList.css'
+import CareScale from './CareScale'
+import '../styles/PlantItem.css'
 
-function PlantItem() {
-  return
-  <div>
-    
-  </div>
+
+function PlantItem({ id, cover, name, water, light }) {
+	return (
+		<li key={id} className='lmj-plant-item'>
+			{name}
+			<img className='lmj-plant-item-cover' src={cover} alt={`${name} cover`} />
+			<div>
+				<CareScale careType='water' scaleValue={water} />
+				<CareScale careType='light' scaleValue={light} />
+			</div>
+		</li>
+	)
 }
+
+export default PlantItem
