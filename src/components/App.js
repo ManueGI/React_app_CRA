@@ -1,6 +1,7 @@
 import Banner from './Banner'
 import Cart from './Cart'
 import ShoppingList from './ShoppingList'
+import Footer from './Footer'
 import logo from '../assets/logo.png'
 
 
@@ -13,6 +14,7 @@ function App() {
         </Banner>
       <Cart/>
       <ShoppingList/>
+      <Footer />
     </div>
   )
 }
