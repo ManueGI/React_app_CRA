@@ -3,6 +3,7 @@ import Cart from './Cart'
 import ShoppingList from './ShoppingList'
 import Footer from './Footer'
 import logo from '../assets/logo.png'
+import '../styles/Layout.css'
 
 
 function App() {
@@ -12,8 +13,10 @@ function App() {
         <img src={logo} alt='La maison jungle' className='lmj-logo'/>
         <h1 className='lmj-title'>La maison Jungle</h1>
         </Banner>
-      <Cart/>
-      <ShoppingList/>
+        <div className='lmj-layout-inner'>
+          <Cart/>
+          <ShoppingList/>
+        </div>
       <Footer />
     </div>
   )
